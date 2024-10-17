@@ -1,12 +1,11 @@
 package com.cbfacademy.search;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -21,8 +20,13 @@ public class BinarySearchTest {
 
     @BeforeEach
     public void setUp() {
-        binarySearch = new BinarySearch();
+        binarySearch =  BinarySearch();
         Arrays.setAll(testArray, position -> position + 1);
+    }
+
+    private Search BinarySearch() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'BinarySearch'");
     }
 
     @ParameterizedTest
